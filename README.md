@@ -52,7 +52,7 @@ Visit `http://127.0.0.1:8000/docs` for the interactive Swagger documentation.
 Run the test script:
 
 ```bash
-python test_api.py
+python tests.py
 ```
 
 Modify `sample_translation`, `sample_book_id`, `sample_chapter`, and `sample_verse` as needed for your data.
