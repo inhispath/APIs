@@ -4,11 +4,21 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
+import subprocess
 
 # Base directory for the databases (adjust if needed)
 BASE_DB_PATH = os.path.join("bible_databases", "formats", "sqlite")
 # Global database (assumed to contain the translations and cross_references tables)
 GLOBAL_DB_FILE = os.path.join(BASE_DB_PATH, "translations.db")
+
+def rename_files_to_uppercase():
+    try:
+        subprocess.run(["python", "uppercase.py"], check=True)
+        print("Files renamed to uppercase successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error during file renaming: {e}")
+
+rename_files_to_uppercase()
 
 app = FastAPI(
     title="Bible Databases API",
