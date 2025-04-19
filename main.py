@@ -560,7 +560,7 @@ def get_verse_quote_image(translation_id: str, book_id: int, chapter: int, verse
         title_text = f"{book_name} {chapter}:{verse}"
         title_width = draw.textlength(title_text, font=title_font)
         title_x = (img_width - title_width) // 2
-        title_y = 220  # Position from top
+        title_y = 200  # Position from top
         draw.text((title_x, title_y), title_text, font=title_font, fill="#000000")
         
         # Wrap and draw the verse text in italics
