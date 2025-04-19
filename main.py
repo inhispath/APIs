@@ -1,10 +1,13 @@
 import os
 import sqlite3
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 import subprocess
+from PIL import Image, ImageDraw, ImageFont
+from io import BytesIO
+import requests
 
 # Base directory for the databases (adjust if needed)
 BASE_DB_PATH = os.path.join("bible_databases", "formats", "sqlite")
@@ -465,17 +468,146 @@ def get_annotations(
         filtered = [a for a in filtered if a["verse"] == verse]
     return filtered
 
-# ------------------------
-# Caching / History Endpoint (Stub)
-# ------------------------
-@app.get("/history")
-def get_history():
+
+@app.get("/translations/{translation_id}/books/{book_id}/chapters/{chapter}/verses/{verse}/quote-image")
+def get_verse_quote_image(translation_id: str, book_id: int, chapter: int, verse: int):
     """
-    Returns recently viewed passages or popular queries.
-    (This is a stub endpoint for demonstration.)
+    Returns a verse as a quote image (1200x630 pixels).
+    Gets the same verse as the single verse endpoint but returns it as an image with
+    the verse text overlaid on the Michelangelo Creation of Adam painting.
     """
-    # In a real app, you might integrate a cache system or database table.
-    return {"message": "History endpoint not yet implemented."}
+    # Get the verse text using the existing functionality
+    conn = get_translation_db(translation_id)
+    table_name = f"{translation_id.upper()}_verses"
+    books_table = f"{translation_id.upper()}_books"
+    cursor = conn.cursor()
+    try:
+        # Get the verse text
+        query = f"""
+            SELECT verse, text
+            FROM {table_name}
+            WHERE book_id = ? AND chapter = ? AND verse = ?
+        """
+        cursor.execute(query, (book_id, chapter, verse))
+        row = cursor.fetchone()
+        if row is None:
+            raise HTTPException(status_code=404, detail="Verse not found")
+        
+        verse_text = row["text"]
+        
+        # Get the book name
+        query = f"""
+            SELECT name
+            FROM {books_table}
+            WHERE id = ?
+        """
+        cursor.execute(query, (book_id,))
+        book_row = cursor.fetchone()
+        book_name = book_row["name"] if book_row else f"Book {book_id}"
+        
+        # Create the image dimensions
+        img_width, img_height = 1200, 630
+        
+        # Get the background image
+        background_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg"
+        try:
+            response = requests.get(background_url, stream=True)
+            response.raise_for_status()
+            bg_img = Image.open(BytesIO(response.content))
+            # Resize and crop to fit our dimensions
+            bg_ratio = bg_img.width / bg_img.height
+            target_ratio = img_width / img_height
+            
+            if bg_ratio > target_ratio:
+                # Background is wider, crop width
+                new_width = int(bg_img.height * target_ratio)
+                left = (bg_img.width - new_width) // 2
+                bg_img = bg_img.crop((left, 0, left + new_width, bg_img.height))
+            else:
+                # Background is taller, crop height
+                new_height = int(bg_img.width / target_ratio)
+                top = (bg_img.height - new_height) // 2
+                bg_img = bg_img.crop((0, top, bg_img.width, top + new_height))
+            
+            # Resize to our target dimensions
+            bg_img = bg_img.resize((img_width, img_height), Image.LANCZOS if hasattr(Image, 'LANCZOS') else Image.ANTIALIAS)
+            
+            # Create a new image from the background
+            img = bg_img.copy()
+        except Exception as e:
+            # If there's any issue with the background, create a solid color background
+            print(f"Error loading background image: {e}")
+            img = Image.new('RGB', (img_width, img_height), color="#FFFBF7")
+        
+        # Create a semi-transparent overlay for better text visibility
+        overlay = Image.new('RGBA', (img_width, img_height), (255, 255, 255, 180))
+        img = Image.alpha_composite(img.convert('RGBA'), overlay)
+        img = img.convert('RGB')  # Convert back to RGB for drawing text
+        
+        draw = ImageDraw.Draw(img)
+        
+        # Try to load nice fonts, fall back to default if not available
+        try:
+            title_font = ImageFont.truetype("AlbertSans-Bold.ttf", 48)
+            verse_font = ImageFont.truetype("AlbertSans-Regular.ttf", 36)
+            button_font = ImageFont.truetype("AlbertSans-Regular.ttf", 24)
+        except IOError:
+            title_font = ImageFont.load_default()
+            verse_font = ImageFont.load_default()
+            button_font = ImageFont.load_default()
+        
+        # Draw the title (book name, chapter, verse)
+        title_text = f"{book_name} {chapter}:{verse}"
+        title_width = draw.textlength(title_text, font=title_font)
+        title_x = (img_width - title_width) // 2
+        title_y = 220  # Position from top
+        draw.text((title_x, title_y), title_text, font=title_font, fill="#000000")
+        
+        # Wrap and draw the verse text in italics
+        max_width = img_width * 0.8  # Use 80% of the image width for text
+        lines = []
+        words = verse_text.split()
+        current_line = words[0]
+        
+        for word in words[1:]:
+            test_line = current_line + " " + word
+            text_width = draw.textlength(test_line, font=verse_font)
+            if text_width <= max_width:
+                current_line = test_line
+            else:
+                lines.append(current_line)
+                current_line = word
+        
+        lines.append(current_line)  # Add the last line
+        
+        # Calculate position to center the verse text block
+        verse_y = img_height // 2 - (len(lines) * 50) // 2 + 30
+        
+        # Draw each line centered with italic styling
+        for line in lines:
+            text_width = draw.textlength(line, font=verse_font)
+            text_x = (img_width - text_width) // 2
+            draw.text((text_x, verse_y), line, font=verse_font, fill="#000000")
+            verse_y += 50  # Line spacing
+
+        # Add a watermark
+        watermark_text = "inhispath.com"
+        watermark_width = draw.textlength(watermark_text, font=button_font)
+        watermark_x = img_width - watermark_width - 20
+        watermark_y = img_height - 40
+        draw.text((watermark_x, watermark_y), watermark_text, font=button_font, fill="#333")
+        
+        # Convert the image to bytes
+        img_byte_arr = BytesIO()
+        img.save(img_byte_arr, format='PNG')
+        img_byte_arr.seek(0)
+        
+        # Return the image
+        return Response(content=img_byte_arr.getvalue(), media_type="image/png")
+    except sqlite3.Error as e:
+        raise HTTPException(status_code=500, detail=f"Error generating quote image: {e}")
+    finally:
+        conn.close()
 
 # ------------------------
 # Run the App
