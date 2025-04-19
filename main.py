@@ -581,7 +581,7 @@ def get_verse_quote_image(translation_id: str, book_id: int, chapter: int, verse
         lines.append(current_line)  # Add the last line
         
         # Calculate position to center the verse text block
-        verse_y = img_height // 2 - (len(lines) * 50) // 2 + 30
+        verse_y = 300
         
         # Draw each line centered with italic styling
         for line in lines:
