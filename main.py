@@ -489,6 +489,105 @@ def get_prayer_by_id(id: int):
     
     raise HTTPException(status_code=404, detail="Prayer not found")
 
+@app.get("/prayers/{id}/quote-image")
+def get_prayer_quote_image(id: int):
+    # Load prayer from data.json
+    try:
+        with open("data.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        raise HTTPException(status_code=500, detail="Error reading data file")
+
+    prayer = next((p for p in data["prayers"] if p.get("id") == id), None)
+    if not prayer:
+        raise HTTPException(status_code=404, detail="Prayer not found")
+
+    # Image setup
+    img_width, img_height = 1200, 630
+    background_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg"
+
+    try:
+        response = requests.get(background_url, stream=True)
+        response.raise_for_status()
+        bg_img = Image.open(BytesIO(response.content))
+        # Crop and resize to 1200x630
+        bg_ratio = bg_img.width / bg_img.height
+        target_ratio = img_width / img_height
+
+        if bg_ratio > target_ratio:
+            new_width = int(bg_img.height * target_ratio)
+            left = (bg_img.width - new_width) // 2
+            bg_img = bg_img.crop((left, 0, left + new_width, bg_img.height))
+        else:
+            new_height = int(bg_img.width / target_ratio)
+            top = (bg_img.height - new_height) // 2
+            bg_img = bg_img.crop((0, top, bg_img.width, top + new_height))
+
+        bg_img = bg_img.resize((img_width, img_height), Image.LANCZOS)
+        img = bg_img.copy()
+    except Exception as e:
+        print(f"Error loading background: {e}")
+        img = Image.new("RGB", (img_width, img_height), "#FFFBF7")
+
+    # Overlay and text drawing
+    overlay = Image.new('RGBA', (img_width, img_height), (255, 255, 255, 180))
+    img = Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB")
+
+    draw = ImageDraw.Draw(img)
+
+    try:
+        title_font = ImageFont.truetype("AlbertSans-Bold.ttf", 48)
+        text_font = ImageFont.truetype("AlbertSans-Regular.ttf", 36)
+        watermark_font = ImageFont.truetype("AlbertSans-Regular.ttf", 24)
+    except IOError:
+        title_font = ImageFont.load_default()
+        text_font = ImageFont.load_default()
+        watermark_font = ImageFont.load_default()
+
+    # Title (Prayer Title)
+    title_text = prayer["title"]
+    title_width = draw.textlength(title_text, font=title_font)
+    draw.text(((img_width - title_width) / 2, 100), title_text, font=title_font, fill="black")
+
+    # Wrap and draw prayer text
+    lines = []
+    words = prayer["text"].split()
+    current_line = words[0]
+
+    for word in words[1:]:
+        test_line = current_line + " " + word
+        if draw.textlength(test_line, font=text_font) <= img_width * 0.8:
+            current_line = test_line
+        else:
+            lines.append(current_line)
+            current_line = word
+    lines.append(current_line)
+
+    max_lines = 8
+    if len(lines) > max_lines:
+        lines = lines[:max_lines]
+        lines[-1] += "..."
+
+    y = 180
+    for line in lines:
+        line_width = draw.textlength(line, font=text_font)
+        draw.text(((img_width - line_width) / 2, y), line, font=text_font, fill="black")
+        y += 50
+
+
+    # Watermark
+    watermark = "inhispath.com"
+    wm_width = draw.textlength(watermark, font=watermark_font)
+    draw.text((img_width - wm_width - 20, img_height - 40), watermark, font=watermark_font, fill="#333")
+
+    # Return image as PNG
+    img_byte_arr = BytesIO()
+    img.save(img_byte_arr, format='PNG')
+    img_byte_arr.seek(0)
+
+    return Response(content=img_byte_arr.getvalue(), media_type="image/png")
+
+
 @app.get("/translations/{translation_id}/books/{book_id}/chapters/{chapter}/verses/{verse}/quote-image")
 def get_verse_quote_image(translation_id: str, book_id: int, chapter: int, verse: int):
     """
