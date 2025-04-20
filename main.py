@@ -2,12 +2,14 @@ import os
 import sqlite3
 from fastapi import FastAPI, HTTPException, Query, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 import subprocess
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 import requests
+import json
 
 # Base directory for the databases (adjust if needed)
 BASE_DB_PATH = os.path.join("bible_databases", "formats", "sqlite")
@@ -469,6 +471,24 @@ def get_annotations(
     return filtered
 
 
+@app.get("/prayers")
+def prayers():
+    with open("data.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    return JSONResponse(content=data["prayers"])
+
+@app.get("/prayers/{id}")
+def get_prayer_by_id(id: int):
+    with open("data.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    for prayer in data["prayers"]:
+        if prayer.get("id") == id:
+            return JSONResponse(content=prayer)
+    
+    raise HTTPException(status_code=404, detail="Prayer not found")
+
 @app.get("/translations/{translation_id}/books/{book_id}/chapters/{chapter}/verses/{verse}/quote-image")
 def get_verse_quote_image(translation_id: str, book_id: int, chapter: int, verse: int):
     """
@@ -608,6 +628,8 @@ def get_verse_quote_image(translation_id: str, book_id: int, chapter: int, verse
         raise HTTPException(status_code=500, detail=f"Error generating quote image: {e}")
     finally:
         conn.close()
+
+
 
 # ------------------------
 # Run the App

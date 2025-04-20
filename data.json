@@ -1,0 +1,254 @@
+{
+  "prayers": [
+    {
+      "title": "The Lord’s Prayer (Traditional)",
+      "text": "Our Father, who art in heaven,\nhallowed be thy name.\nThy kingdom come.\nThy will be done\non earth as it is in heaven.\nGive us this day our daily bread,\nand forgive us our trespasses,\nas we forgive those who trespass against us,\nand lead us not into temptation,\nbut deliver us from evil.\nAmen.",
+      "id": 1
+    },
+    {
+      "title": "The Lord’s Prayer (Contemporary)",
+      "text": "Our Father in heaven,\nhallowed be your name.\nYour kingdom come,\nyour will be done,\non earth as it is in heaven.\nGive us today our daily bread.\nForgive us our sins\nas we forgive those who sin against us.\nSave us from the time of trial\nand deliver us from evil.\nFor the kingdom, the power,\nand the glory are yours\nnow and forever.\nAmen.",
+      "id": 2
+    },
+    {
+      "title": "The Nicene Creed",
+      "text": "We believe in one God,\nthe Father Almighty,\nMaker of heaven and earth,\nof all things visible and invisible.\n\nAnd in one Lord Jesus Christ,\nthe only-begotten Son of God,\nbegotten of the Father before all worlds;\nGod of God, Light of Light,\nvery God of very God;\nbegotten, not made,\nbeing of one substance with the Father,\nby whom all things were made.\n\nWho for us men and for our salvation\ncame down from heaven,\nand was incarnate by the Holy Spirit\nof the Virgin Mary,\nand was made man,\nand was crucified also for us under Pontius Pilate.\nHe suffered and was buried,\nand the third day he rose again\naccording to the Scriptures,\nand ascended into heaven,\nand sits at the right hand of the Father.\nAnd he shall come again with glory\nto judge both the living and the dead;\nwhose kingdom shall have no end.\n\nAnd we believe in the Holy Spirit,\nthe Lord and Giver of life,\nwho proceeds from the Father and the Son,\nwho with the Father and the Son together\nis worshiped and glorified,\nwho spoke by the prophets.\n\nAnd we believe in one holy catholic\nand apostolic Church.\nWe acknowledge one baptism\nfor the remission of sins.\nAnd we look for the resurrection of the dead,\nand the life of the world to come.\nAmen.",
+      "id": 3
+    },
+    {
+      "title": "The Apostles’ Creed",
+      "text": "I believe in God,\nthe Father Almighty,\nCreator of heaven and earth;\n\nand in Jesus Christ, His only Son, our Lord,\nwho was conceived by the Holy Spirit,\nborn of the Virgin Mary,\nsuffered under Pontius Pilate,\nwas crucified, died, and was buried.\nHe descended into hell.\nThe third day He rose again from the dead.\nHe ascended into heaven\nand is seated at the right hand of God\nthe Father Almighty.\nFrom thence He shall come\nto judge the living and the dead.\n\nI believe in the Holy Spirit,\nthe holy catholic Church,\nthe communion of saints,\nthe forgiveness of sins,\nthe resurrection of the body,\nand life everlasting.\nAmen.",
+      "id": 4
+    },
+    {
+      "title": "The Gloria Patri (Doxology)",
+      "text": "Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.\nAs it was in the beginning,\nis now, and ever shall be,\nworld without end.\nAmen.",
+      "id": 5
+    },
+    {
+      "title": "The Hail Mary",
+      "text": "Hail Mary, full of grace,\nthe Lord is with thee.\nBlessed art thou among women,\nand blessed is the fruit of thy womb, Jesus.\nHoly Mary, Mother of God,\npray for us sinners,\nnow and at the hour of our death.\nAmen.",
+      "id": 6
+    },
+    {
+      "title": "The Hail Holy Queen",
+      "text": "Hail, holy Queen, Mother of mercy,\nour life, our sweetness, and our hope.\nTo thee do we cry,\npoor banished children of Eve.\nTo thee do we send up our sighs,\nmourning and weeping in this valley of tears.\nTurn then, most gracious advocate,\nthine eyes of mercy toward us,\nand after this our exile\nshow unto us the blessed fruit of thy womb, Jesus.\nO clement, O loving,\nO sweet Virgin Mary.\nPray for us, O holy Mother of God,\nthat we may be made worthy\nof the promises of Christ.\nAmen.",
+      "id": 7
+    },
+    {
+      "title": "The Magnificat (Song of Mary)",
+      "text": "My soul magnifies the Lord,\nand my spirit rejoices in God my Savior,\nfor he has looked on the humble estate of his servant.\nFor behold, from now on all generations will call me blessed;\nfor he who is mighty has done great things for me,\nand holy is his name.\nAnd his mercy is for those who fear him\nfrom generation to generation.\nHe has shown strength with his arm;\nhe has scattered the proud in the thoughts of their hearts;\nhe has brought down the mighty from their thrones\nand exalted those of humble estate;\nhe has filled the hungry with good things,\nand the rich he has sent away empty.\nHe has helped his servant Israel,\nin remembrance of his mercy,\nas he spoke to our fathers,\nto Abraham and to his offspring forever.\nAmen.",
+      "id": 8
+    },
+    {
+      "title": "The Benedictus (Song of Zechariah)",
+      "text": "Blessed be the Lord God of Israel,\nfor he has visited and redeemed his people\nand has raised up a horn of salvation for us\nin the house of his servant David,\nas he spoke by the mouth of his holy prophets from of old,\nthat we should be saved from our enemies\nand from the hand of all who hate us;\nto show the mercy promised to our fathers\nand to remember his holy covenant,\nthe oath that he swore to our father Abraham, to grant us\nthat we, being delivered from the hand of our enemies,\nmight serve him without fear,\nin holiness and righteousness before him\nall our days.\nAnd you, child, will be called the prophet of the Most High;\nfor you will go before the Lord to prepare his ways,\nto give knowledge of salvation to his people\nin the forgiveness of their sins,\nbecause of the tender mercy of our God,\nwhereby the sunrise shall visit us from on high\nto give light to those who sit in darkness\nand in the shadow of death,\nto guide our feet into the way of peace.\nAmen.",
+      "id": 9
+    },
+    {
+      "title": "The Nunc Dimittis (Song of Simeon)",
+      "text": "Lord, now lettest thou thy servant depart in peace,\naccording to thy word;\nfor mine eyes have seen thy salvation\nwhich thou hast prepared in the presence of all peoples,\na light for revelation to the Gentiles,\nand for glory to thy people Israel.\nAmen.",
+      "id": 10
+    },
+    {
+      "title": "The Jesus Prayer",
+      "text": "Lord Jesus Christ,\nSon of God,\nhave mercy on me,\na sinner.",
+      "id": 11
+    },
+    {
+      "title": "The Serenity Prayer",
+      "text": "God, grant me the serenity\nto accept the things I cannot change,\ncourage to change the things I can,\nand wisdom to know the difference.\nLiving one day at a time,\nenjoying one moment at a time,\naccepting hardship as a pathway to peace,\ntaking, as Jesus did,\nthis sinful world as it is,\nnot as I would have it,\ntrusting that You will make all things right\nif I surrender to Your will,\nso that I may be reasonably happy in this life,\nand supremely happy with You forever in the next.\nAmen.",
+      "id": 12
+    },
+    {
+      "title": "The Prayer of St. Francis",
+      "text": "Lord, make me an instrument of your peace.\nWhere there is hatred, let me sow love;\nwhere there is injury, pardon;\nwhere there is doubt, faith;\nwhere there is despair, hope;\nwhere there is darkness, light;\nwhere there is sadness, joy.\n\nO Divine Master,\ngrant that I may not so much seek\nto be consoled as to console,\nto be understood as to understand,\nto be loved as to love.\nFor it is in giving that we receive,\nit is in pardoning that we are pardoned,\nit is in dying that we are born to eternal life.\nAmen.",
+      "id": 13
+    },
+    {
+      "title": "The Breastplate of St. Patrick",
+      "text": "Christ with me, Christ before me, Christ behind me,\nChrist in me, Christ beneath me, Christ above me,\nChrist on my right, Christ on my left,\nChrist when I lie down, Christ when I sit down, Christ when I arise,\nChrist in the heart of every man who thinks of me,\nChrist in the mouth of everyone who speaks of me,\nChrist in every eye that sees me,\nChrist in every ear that hears me.\n\nI arise today\nthrough a mighty strength, the invocation of the Trinity,\nthrough belief in the threeness,\nthrough confession of the oneness\nof the Creator of Creation.\nAmen.",
+      "id": 14
+    },
+    {
+      "title": "The Trisagion",
+      "text": "Holy God,\nHoly Mighty,\nHoly Immortal,\nhave mercy on us.",
+      "id": 15
+    },
+    {
+      "title": "The Gloria in Excelsis Deo",
+      "text": "Glory to God in the highest,\nand peace to his people on earth.\n\nLord God, heavenly King,\nalmighty God and Father,\nwe worship you, we give you thanks,\nwe praise you for your glory.\n\nLord Jesus Christ, only Son of the Father,\nLord God, Lamb of God,\nyou take away the sin of the world:\nhave mercy on us;\nyou are seated at the right hand of the Father:\nreceive our prayer.\n\nFor you alone are the Holy One,\nyou alone are the Lord,\nyou alone are the Most High,\nJesus Christ,\nwith the Holy Spirit,\nin the glory of God the Father.\nAmen.",
+      "id": 16
+    },
+    {
+      "title": "The Anima Christi",
+      "text": "Soul of Christ, sanctify me;\nBody of Christ, save me;\nBlood of Christ, inebriate me;\nWater from the side of Christ, wash me;\nPassion of Christ, strengthen me;\n\nO good Jesus, hear me;\nWithin Thy wounds hide me;\nSuffer me not to be separated from Thee;\nFrom the malignant enemy defend me;\nIn the hour of my death call me,\nAnd bid me come to Thee,\nThat with Thy saints I may praise Thee\nForever and ever.\nAmen.",
+      "id": 17
+    },
+    {
+      "title": "The Act of Contrition",
+      "text": "O my God,\nI am heartily sorry for having offended Thee,\nand I detest all my sins,\nbecause I dread the loss of heaven and the pains of hell,\nbut most of all because they offend Thee, my God,\nWho art all-good and deserving of all my love.\nI firmly resolve,\nwith the help of Thy grace,\nto confess my sins,\nto do penance,\nand to amend my life.\nAmen.",
+      "id": 18
+    },
+    {
+      "title": "The Memorare",
+      "text": "Remember, O most gracious Virgin Mary,\nthat never was it known\nthat anyone who fled to thy protection,\nimplored thy help,\nor sought thy intercession,\nwas left unaided.\n\nInspired by this confidence,\nI fly unto thee,\nO Virgin of virgins, my Mother;\nto thee do I come,\nbefore thee I stand,\nsinful and sorrowful.\n\nO Mother of the Word Incarnate,\ndespise not my petitions,\nbut in thy mercy hear and answer me.\nAmen.",
+      "id": 19
+    },
+    {
+      "title": "The Angelus",
+      "text": "The Angel of the Lord declared unto Mary,\nAnd she conceived of the Holy Spirit.\n\nHail Mary, full of grace,\nthe Lord is with thee;\nblessed art thou among women,\nand blessed is the fruit of thy womb, Jesus.\n\nHoly Mary, Mother of God,\npray for us sinners,\nnow and at the hour of our death.\nAmen.\n\nBehold the handmaid of the Lord.\nBe it done unto me according to thy word.\n\nHail Mary...\n\nAnd the Word was made flesh,\nAnd dwelt among us.\n\nHail Mary...\n\nPray for us, O holy Mother of God,\nThat we may be made worthy of the promises of Christ.\n\nLet us pray:\nPour forth, we beseech thee, O Lord,\nthy grace into our hearts,\nthat we to whom the Incarnation of Christ thy Son\nwas made known by the message of an angel,\nmay by his Passion and Cross\nbe brought to the glory of his Resurrection.\nThrough the same Christ our Lord.\nAmen.",
+      "id": 20
+    },
+    {
+      "title": "Psalm 23",
+      "text": "The Lord is my shepherd;\nI shall not want.\nHe makes me lie down in green pastures.\nHe leads me beside still waters.\nHe restores my soul.\nHe leads me in paths of righteousness\nfor his name's sake.\n\nEven though I walk through the valley of the shadow of death,\nI will fear no evil,\nfor you are with me;\nyour rod and your staff,\nthey comfort me.\n\nYou prepare a table before me\nin the presence of my enemies;\nyou anoint my head with oil;\nmy cup overflows.\nSurely goodness and mercy shall follow me\nall the days of my life,\nand I shall dwell in the house of the Lord\nforever.",
+      "id": 21
+    },
+    {
+      "title": "Psalm 51",
+      "text": "Have mercy on me, O God,\naccording to your steadfast love;\naccording to your abundant mercy\nblot out my transgressions.\nWash me thoroughly from my iniquity,\nand cleanse me from my sin!\n\nFor I know my transgressions,\nand my sin is ever before me.\nAgainst you, you only, have I sinned\nand done what is evil in your sight,\nso that you may be justified in your words\nand blameless in your judgment.\n\nBehold, I was brought forth in iniquity,\nand in sin did my mother conceive me.\nBehold, you delight in truth in the inward being,\nand you teach me wisdom in the secret heart.\n\nPurge me with hyssop, and I shall be clean;\nwash me, and I shall be whiter than snow.\nLet me hear joy and gladness;\nlet the bones that you have broken rejoice.\nHide your face from my sins,\nand blot out all my iniquities.\n\nCreate in me a clean heart, O God,\nand renew a right spirit within me.\nCast me not away from your presence,\nand take not your Holy Spirit from me.\nRestore to me the joy of your salvation,\nand uphold me with a willing spirit.\n\nThen I will teach transgressors your ways,\nand sinners will return to you.\nDeliver me from bloodguiltiness, O God,\nO God of my salvation,\nand my tongue will sing aloud of your righteousness.\nO Lord, open my lips,\nand my mouth will declare your praise.\n\nFor you will not delight in sacrifice, or I would give it;\nyou will not be pleased with a burnt offering.\nThe sacrifices of God are a broken spirit;\na broken and contrite heart, O God, you will not despise.\n\nDo good to Zion in your good pleasure;\nbuild up the walls of Jerusalem;\nthen will you delight in right sacrifices,\nin burnt offerings and whole burnt offerings;\nthen bulls will be offered on your altar.",
+      "id": 22
+    },
+    {
+      "title": "Psalm 91",
+      "text": "He who dwells in the shelter of the Most High\nwill abide in the shadow of the Almighty.\nI will say to the Lord, \"My refuge and my fortress,\nmy God, in whom I trust.\"\n\nFor he will deliver you from the snare of the fowler\nand from the deadly pestilence.\nHe will cover you with his pinions,\nand under his wings you will find refuge;\nhis faithfulness is a shield and buckler.\n\nYou will not fear the terror of the night,\nnor the arrow that flies by day,\nnor the pestilence that stalks in darkness,\nnor the destruction that wastes at noonday.\n\nA thousand may fall at your side,\nten thousand at your right hand,\nbut it will not come near you.\nYou will only look with your eyes\nand see the recompense of the wicked.\n\nBecause you have made the Lord your dwelling place—\nthe Most High, who is my refuge—\nno evil shall befall you,\nno plague come near your tent.\n\nFor he will command his angels concerning you\nto guard you in all your ways.\nOn their hands they will bear you up,\nlest you strike your foot against a stone.\nYou will tread on the lion and the adder;\nthe young lion and the serpent you will trample underfoot.\n\n\"Because he holds fast to me in love, I will deliver him;\nI will protect him, because he knows my name.\nWhen he calls to me, I will answer him;\nI will be with him in trouble;\nI will rescue him and honor him.\nWith long life I will satisfy him\nand show him my salvation.\"",
+      "id": 23
+    },
+    {
+      "title": "Psalm 121",
+      "text": "I lift up my eyes to the hills.\nFrom where does my help come?\nMy help comes from the Lord,\nwho made heaven and earth.\n\nHe will not let your foot be moved;\nhe who keeps you will not slumber.\nBehold, he who keeps Israel\nwill neither slumber nor sleep.\n\nThe Lord is your keeper;\nthe Lord is your shade on your right hand.\nThe sun shall not strike you by day,\nnor the moon by night.\n\nThe Lord will keep you from all evil;\nhe will keep your life.\nThe Lord will keep\nyour going out and your coming in\nfrom this time forth and forevermore.",
+      "id": 24
+    },
+    {
+      "title": "Psalm 139",
+      "text": "O Lord, you have searched me and known me!\nYou know when I sit down and when I rise up;\nyou discern my thoughts from afar.\nYou search out my path and my lying down\nand are acquainted with all my ways.\n\nEven before a word is on my tongue,\nbehold, O Lord, you know it altogether.\nYou hem me in, behind and before,\nand lay your hand upon me.\nSuch knowledge is too wonderful for me;\nit is high; I cannot attain it.\n\nWhere shall I go from your Spirit?\nOr where shall I flee from your presence?\nIf I ascend to heaven, you are there!\nIf I make my bed in Sheol, you are there!\nIf I take the wings of the morning\nand dwell in the uttermost parts of the sea,\neven there your hand shall lead me,\nand your right hand shall hold me.\n\nIf I say, \"Surely the darkness shall cover me,\nand the light about me be night,\"\neven the darkness is not dark to you;\nthe night is bright as the day,\nfor darkness is as light with you.\n\nFor you formed my inward parts;\nyou knitted me together in my mother's womb.\nI praise you, for I am fearfully and wonderfully made.\nWonderful are your works;\nmy soul knows it very well.\n\nMy frame was not hidden from you,\nwhen I was being made in secret,\nintricately woven in the depths of the earth.\nYour eyes saw my unformed substance;\nin your book were written, every one of them,\nthe days that were formed for me,\nwhen as yet there was none of them.\n\nHow precious to me are your thoughts, O God!\nHow vast is the sum of them!\nIf I would count them, they are more than the sand.\nI awake, and I am still with you.\n\nOh that you would slay the wicked, O God!\nO men of blood, depart from me!\nThey speak against you with malicious intent;\nyour enemies take your name in vain.\nDo I not hate those who hate you, O Lord?\nAnd do I not loathe those who rise up against you?\nI hate them with complete hatred;\nI count them my enemies.\n\nSearch me, O God, and know my heart!\nTry me and know my thoughts!\nAnd see if there be any grievous way in me,\nand lead me in the way everlasting!",
+      "id": 25
+    },
+    {
+      "title": "The Beatitudes (Matthew 5:3-12)",
+      "text": "Blessed are the poor in spirit,\nfor theirs is the kingdom of heaven.\n\nBlessed are those who mourn,\nfor they shall be comforted.\n\nBlessed are the meek,\nfor they shall inherit the earth.\n\nBlessed are those who hunger and thirst for righteousness,\nfor they shall be satisfied.\n\nBlessed are the merciful,\nfor they shall receive mercy.\n\nBlessed are the pure in heart,\nfor they shall see God.\n\nBlessed are the peacemakers,\nfor they shall be called sons of God.\n\nBlessed are those who are persecuted for righteousness' sake,\nfor theirs is the kingdom of heaven.\n\nBlessed are you when others revile you and persecute you\nand utter all kinds of evil against you falsely on my account.\nRejoice and be glad, for your reward is great in heaven,\nfor so they persecuted the prophets who were before you.",
+      "id": 26
+    },
+    {
+      "title": "The Lord's Prayer (Luke 11:2-4)",
+      "text": "Father, hallowed be your name.\nYour kingdom come.\nGive us each day our daily bread,\nand forgive us our sins,\nfor we ourselves forgive everyone who is indebted to us.\nAnd lead us not into temptation,\nbut deliver us from evil.",
+      "id": 27
+    },
+    {
+      "title": "Jesus' Prayer in Gethsemane (Luke 22:42)",
+      "text": "Father, if you are willing,\nremove this cup from me;\nnevertheless, not my will,\nbut yours, be done.",
+      "id": 28
+    },
+    {
+      "title": "Jesus' Prayer on the Cross (Luke 23:34)",
+      "text": "Father, forgive them,\nfor they know not what they do.",
+      "id": 29
+    },
+    {
+      "title": "The High Priestly Prayer (John 17)",
+      "text": "Father, the hour has come;\nglorify your Son that the Son may glorify you,\nsince you have given him authority over all flesh,\nto give eternal life to all whom you have given him.\nAnd this is eternal life,\nthat they know you, the only true God,\nand Jesus Christ whom you have sent.\n\nI glorified you on earth,\nhaving accomplished the work that you gave me to do.\nAnd now, Father, glorify me in your own presence\nwith the glory that I had with you before the world existed.\n\nI have manifested your name to the people\nwhom you gave me out of the world.\nYours they were, and you gave them to me,\nand they have kept your word.\nNow they know that everything that you have given me is from you.\nFor I have given them the words that you gave me,\nand they have received them\nand have come to know in truth that I came from you;\nand they have believed that you sent me.\n\nI am praying for them.\nI am not praying for the world\nbut for those whom you have given me,\nfor they are yours.\nAll mine are yours, and yours are mine,\nand I am glorified in them.\n\nAnd I am no longer in the world,\nbut they are in the world,\nand I am coming to you.\nHoly Father,\nkeep them in your name,\nwhich you have given me,\nthat they may be one, even as we are one.\n\nWhile I was with them,\nI kept them in your name,\nwhich you have given me.\nI have guarded them,\nand not one of them has been lost\nexcept the son of destruction,\nthat the Scripture might be fulfilled.\n\nBut now I am coming to you,\nand these things I speak in the world,\nthat they may have my joy fulfilled in themselves.\nI have given them your word,\nand the world has hated them\nbecause they are not of the world,\njust as I am not of the world.\n\nI do not ask that you take them out of the world,\nbut that you keep them from the evil one.\nThey are not of the world,\njust as I am not of the world.\nSanctify them in the truth;\nyour word is truth.\nAs you sent me into the world,\nso I have sent them into the world.\nAnd for their sake I consecrate myself,\nthat they also may be sanctified in truth.\n\nI do not ask for these only,\nbut also for those who will believe in me through their word,\nthat they may all be one,\njust as you, Father, are in me, and I in you,\nthat they also may be in us,\nso that the world may believe that you have sent me.\n\nThe glory that you have given me\nI have given to them,\nthat they may be one even as we are one,\nI in them and you in me,\nthat they may become perfectly one,\nso that the world may know that you sent me\nand loved them even as you loved me.\n\nFather, I desire that they also,\nwhom you have given me,\nmay be with me where I am,\nto see my glory that you have given me\nbecause you loved me before the foundation of the world.\n\nO righteous Father,\neven though the world does not know you,\nI know you,\nand these know that you have sent me.\nI made known to them your name,\nand I will continue to make it known,\nthat the love with which you have loved me\nmay be in them, and I in them.",
+      "id": 30
+    },
+    {
+      "title": "Prayer of Jabez (1 Chronicles 4:10)",
+      "text": "Oh that you would bless me\nand enlarge my border,\nand that your hand might be with me,\nand that you would keep me from harm\nso that it might not bring me pain!",
+      "id": 31
+    },
+    {
+      "title": "Hannah's Prayer (1 Samuel 2:1-10)",
+      "text": "My heart exults in the Lord;\nmy horn is exalted in the Lord.\nMy mouth derides my enemies,\nbecause I rejoice in your salvation.\n\nThere is none holy like the Lord;\nfor there is none besides you;\nthere is no rock like our God.\nTalk no more so very proudly,\nlet not arrogance come from your mouth;\nfor the Lord is a God of knowledge,\nand by him actions are weighed.\n\nThe bows of the mighty are broken,\nbut the feeble bind on strength.\nThose who were full have hired themselves out for bread,\nbut those who were hungry have ceased to hunger.\nThe barren has borne seven,\nbut she who has many children is forlorn.\n\nThe Lord kills and brings to life;\nhe brings down to Sheol and raises up.\nThe Lord makes poor and makes rich;\nhe brings low and he exalts.\nHe raises up the poor from the dust;\nhe lifts the needy from the ash heap\nto make them sit with princes\nand inherit a seat of honor.\nFor the pillars of the earth are the Lord's,\nand on them he has set the world.\n\nHe will guard the feet of his faithful ones,\nbut the wicked shall be cut off in darkness,\nfor not by might shall a man prevail.\nThe adversaries of the Lord shall be broken to pieces;\nagainst them he will thunder in heaven.\nThe Lord will judge the ends of the earth;\nhe will give strength to his king\nand exalt the horn of his anointed.",
+      "id": 32
+    },
+    {
+      "title": "Solomon's Prayer for Wisdom (1 Kings 3:9)",
+      "text": "Give your servant therefore an understanding mind\nto govern your people,\nthat I may discern between good and evil,\nfor who is able to govern this your great people?",
+      "id": 33
+    },
+    {
+      "title": "Jonah's Prayer from the Fish (Jonah 2:2-9)",
+      "text": "I called out to the Lord, out of my distress,\nand he answered me;\nout of the belly of Sheol I cried,\nand you heard my voice.\nFor you cast me into the deep,\ninto the heart of the seas,\nand the flood surrounded me;\nall your waves and your billows\npassed over me.\n\nThen I said, 'I am driven away\nfrom your sight;\nyet I shall again look\nupon your holy temple.'\nThe waters closed in over me to take my life;\nthe deep surrounded me;\nweeds were wrapped about my head\nat the roots of the mountains.\nI went down to the land\nwhose bars closed upon me forever;\nyet you brought up my life from the pit,\nO Lord my God.\n\nWhen my life was fainting away,\nI remembered the Lord,\nand my prayer came to you,\ninto your holy temple.\nThose who pay regard to vain idols\nforsake their hope of steadfast love.\nBut I with the voice of thanksgiving\nwill sacrifice to you;\nwhat I have vowed I will pay.\nSalvation belongs to the Lord!",
+      "id": 34
+    },
+    {
+      "title": "Habakkuk's Prayer (Habakkuk 3:2-19)",
+      "text": "O Lord, I have heard the report of you,\nand your work, O Lord, do I fear.\nIn the midst of the years revive it;\nin the midst of the years make it known;\nin wrath remember mercy.\n\nGod came from Teman,\nand the Holy One from Mount Paran.\nHis splendor covered the heavens,\nand the earth was full of his praise.\nHis brightness was like the light;\nrays flashed from his hand;\nand there he veiled his power.\nBefore him went pestilence,\nand plague followed at his heels.\nHe stood and measured the earth;\nhe looked and shook the nations;\nthen the eternal mountains were scattered;\nthe everlasting hills sank low.\nHis were the everlasting ways.\n\nI saw the tents of Cushan in affliction;\nthe curtains of the land of Midian did tremble.\nWas your wrath against the rivers, O Lord?\nWas your anger against the rivers,\nor your indignation against the sea,\nwhen you rode on your horses,\non your chariot of salvation?\nYou stripped the sheath from your bow,\ncalling for many arrows.\nYou split the earth with rivers.\nThe mountains saw you and writhed;\nthe raging waters swept on;\nthe deep gave forth its voice;\nit lifted its hands on high.\nThe sun and moon stood still in their place\nat the light of your arrows as they sped,\nat the flash of your glittering spear.\n\nYou marched through the earth in fury;\nyou threshed the nations in anger.\nYou went out for the salvation of your people,\nfor the salvation of your anointed.\nYou crushed the head of the house of the wicked,\nlaying him bare from thigh to neck.\nYou pierced with his own arrows the heads of his warriors,\nwho came like a whirlwind to scatter me,\nrejoicing as if to devour the poor in secret.\nYou trampled the sea with your horses,\nthe surging of mighty waters.\n\nI hear, and my body trembles;\nmy lips quiver at the sound;\nrottenness enters into my bones;\nmy legs tremble beneath me.\nYet I will quietly wait for the day of trouble\nto come upon people who invade us.\n\nThough the fig tree should not blossom,\nnor fruit be on the vines,\nthe produce of the olive fail\nand the fields yield no food,\nthe flock be cut off from the fold\nand there be no herd in the stalls,\nyet I will rejoice in the Lord;\nI will take joy in the God of my salvation.\n\nGod, the Lord, is my strength;\nhe makes my feet like the deer's;\nhe makes me tread on my high places.",
+      "id": 35
+    },
+    {
+      "title": "Mary's Song (Luke 1:46-55)",
+      "text": "My soul magnifies the Lord,\nand my spirit rejoices in God my Savior,\nfor he has looked on the humble estate of his servant.\nFor behold, from now on all generations will call me blessed;\nfor he who is mighty has done great things for me,\nand holy is his name.\nAnd his mercy is for those who fear him\nfrom generation to generation.\nHe has shown strength with his arm;\nhe has scattered the proud in the thoughts of their hearts;\nhe has brought down the mighty from their thrones\nand exalted those of humble estate;\nhe has filled the hungry with good things,\nand the rich he has sent away empty.\nHe has helped his servant Israel,\nin remembrance of his mercy,\nas he spoke to our fathers,\nto Abraham and to his offspring forever.",
+      "id": 36
+    },
+    {
+      "title": "Zechariah's Prophecy (Luke 1:68-79)",
+      "text": "Blessed be the Lord God of Israel,\nfor he has visited and redeemed his people\nand has raised up a horn of salvation for us\nin the house of his servant David,\nas he spoke by the mouth of his holy prophets from of old,\nthat we should be saved from our enemies\nand from the hand of all who hate us;\nto show the mercy promised to our fathers\nand to remember his holy covenant,\nthe oath that he swore to our father Abraham, to grant us\nthat we, being delivered from the hand of our enemies,\nmight serve him without fear,\nin holiness and righteousness before him\nall our days.\n\nAnd you, child, will be called the prophet of the Most High;\nfor you will go before the Lord to prepare his ways,\nto give knowledge of salvation to his people\nin the forgiveness of their sins,\nbecause of the tender mercy of our God,\nwhereby the sunrise shall visit us from on high\nto give light to those who sit in darkness\nand in the shadow of death,\nto guide our feet into the way of peace.",
+      "id": 37
+    },
+    {
+      "title": "Simeon's Blessing (Luke 2:29-32)",
+      "text": "Lord, now you are letting your servant depart in peace,\naccording to your word;\nfor my eyes have seen your salvation\nthat you have prepared in the presence of all peoples,\na light for revelation to the Gentiles,\nand for glory to your people Israel.",
+      "id": 38
+    },
+    {
+      "title": "Stephen's Prayer (Acts 7:59-60)",
+      "text": "Lord Jesus, receive my spirit.\nLord, do not hold this sin against them.",
+      "id": 39
+    },
+    {
+      "title": "Paul's Prayer for the Ephesians (Ephesians 3:14-21)",
+      "text": "For this reason I bow my knees before the Father,\nfrom whom every family in heaven and on earth is named,\nthat according to the riches of his glory\nhe may grant you to be strengthened with power\nthrough his Spirit in your inner being,\nso that Christ may dwell in your hearts through faith—\nthat you, being rooted and grounded in love,\nmay have strength to comprehend with all the saints\nwhat is the breadth and length and height and depth,\nand to know the love of Christ that surpasses knowledge,\nthat you may be filled with all the fullness of God.\n\nNow to him who is able to do far more abundantly\nthan all that we ask or think,\naccording to the power at work within us,\nto him be glory in the church and in Christ Jesus\nthroughout all generations, forever and ever. Amen.",
+      "id": 40
+    },
+    {
+      "title": "Prayer of Confession",
+      "text": "Most merciful God,\nwe confess that we have sinned against you\nin thought, word, and deed,\nby what we have done,\nand by what we have left undone.\nWe have not loved you with our whole heart;\nwe have not loved our neighbors as ourselves.\nWe are truly sorry and we humbly repent.\nFor the sake of your Son Jesus Christ,\nhave mercy on us and forgive us;\nthat we may delight in your will,\nand walk in your ways,\nto the glory of your Name. Amen.",
+      "id": 41
+    },
+    {
+      "title": "Prayer of Thanksgiving",
+      "text": "Almighty God, Father of all mercies,\nwe your unworthy servants give you humble thanks\nfor all your goodness and loving-kindness\nto us and to all whom you have made.\nWe bless you for our creation, preservation,\nand all the blessings of this life;\nbut above all for your immeasurable love\nin the redemption of the world by our Lord Jesus Christ;\nfor the means of grace, and for the hope of glory.\nAnd, we pray, give us such an awareness of your mercies,\nthat with truly thankful hearts\nwe may show forth your praise,\nnot only with our lips, but in our lives,\nby giving up ourselves to your service,\nand by walking before you\nin holiness and righteousness all our days;\nthrough Jesus Christ our Lord,\nto whom, with you and the Holy Spirit,\nbe honor and glory throughout all ages. Amen.",
+      "id": 42
+    },
+    {
+      "title": "Prayer for Guidance",
+      "text": "Direct us, O Lord, in all our doings\nwith your most gracious favor,\nand further us with your continual help;\nthat in all our works begun, continued, and ended in you,\nwe may glorify your holy Name,\nand finally, by your mercy,\nobtain everlasting life;\nthrough Jesus Christ our Lord. Amen.",
+      "id": 43
+    },
+    {
+      "title": "Prayer for Peace",
+      "text": "O God, the author of peace and lover of concord,\nto know you is eternal life and to serve you is perfect freedom;\nDefend us your humble servants in all assaults of our enemies;\nthat we, surely trusting in your defense,\nmay not fear the power of any adversaries;\nthrough the might of Jesus Christ our Lord. Amen.",
+      "id": 44
+    },
+    {
+      "title": "Prayer for Strength",
+      "text": "O God of grace and glory,\nwe remember before you this day our brother/sister (name).\nWe thank you for giving him/her to us,\nhis/her family and friends,\nto know and to love as a companion on our earthly pilgrimage.\nIn your boundless compassion,\nconsole us who mourn.\nGive us faith to see in death\nthe gate of eternal life,\nso that in quiet confidence\nwe may continue our course on earth,\nuntil, by your call,\nwe are reunited with those who have gone before;\nthrough Jesus Christ our Lord. Amen.",
+      "id": 45
+    },
+    {
+      "title": "Morning Prayer",
+      "text": "O Lord, our heavenly Father,\nalmighty and everlasting God,\nwho has brought us safely to the beginning of this day:\nDefend us by your mighty power,\nthat we may not fall into sin\nnor run into any danger;\nand that, guided by your Spirit,\nwe may do what is righteous in your sight;\nthrough Jesus Christ our Lord. Amen.",
+      "id": 46
+    },
+    {
+      "title": "Evening Prayer",
+      "text": "O Lord, support us all the day long,\nuntil the shadows lengthen and the evening comes,\nand the busy world is hushed,\nand the fever of life is over,\nand our work is done.\nThen in your mercy grant us a safe lodging,\nand a holy rest, and peace at the last;\nthrough Jesus Christ our Lord. Amen.",
+      "id": 47
+    },
+    {
+      "title": "Prayer Before Meals",
+      "text": "Bless us, O Lord,\nand these your gifts,\nwhich we are about to receive from your bounty,\nthrough Christ our Lord. Amen.\n\nOr:\n\nHeavenly Father,\nbless us and these your gifts\nwhich we receive from your loving hands,\nthrough Christ our Lord. Amen.",
+      "id": 48
+    },
+    {
+      "title": "Prayer After Meals",
+      "text": "We give you thanks, Almighty God,\nfor all your benefits,\nwho live and reign forever.\nAmen.\n\nMay the Lord grant us His peace,\nand life everlasting.\nAmen.",
+      "id": 49
+    },
+    {
+      "title": "Prayer for the Sick",
+      "text": "Heavenly Father, giver of life and health:\nComfort and relieve your sick servant (name),\nand give your power of healing to those who minister to his/her needs,\nthat he/she may be strengthened in his/her weakness\nand have confidence in your loving care;\nthrough Jesus Christ our Lord. Amen.",
+      "id": 50
+    }
+  ]
+}
